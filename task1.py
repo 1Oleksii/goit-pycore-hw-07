@@ -90,7 +90,7 @@ class AddressBook(UserDict):
             if record.birthday:
                 birthday_this_year = record.birthday.value.replace(year=today.year)
 
-                # If the birthday already passed this year, move it to next year
+                # If the birthday already passed this year, move it to next year 
                 if birthday_this_year < today:
                     birthday_this_year = record.birthday.value.replace(year=today.year + 1)
 
